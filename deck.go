@@ -19,6 +19,7 @@ func newDeck() deck {
 
 func (d deck) print() {
 	for i, card := range d {
+		//print name and index
 		fmt.Println(i, card)
 	}
 }
