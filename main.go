@@ -10,6 +10,6 @@ func main() {
 	// fmt.Println("Remaining cards after deal")
 	// remainingCards.print()
 
-	greeting := "Hello there"
-	fmt.Println([]byte(greeting))
+	cards := newDeck()
+	fmt.Println(cards.toString())
 }
