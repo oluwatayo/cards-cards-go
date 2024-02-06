@@ -61,3 +61,8 @@ func (d deck) shuffle() {
 		d[i], d[newPosition] = d[newPosition], d[i]
 	}
 }
+
+type card struct {
+	name  string
+	color string
+}
