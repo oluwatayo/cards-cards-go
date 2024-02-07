@@ -66,3 +66,7 @@ type card struct {
 	name  string
 	color string
 }
+
+func (c card) printCard() {
+	fmt.Printf("%+v", c)
+}
