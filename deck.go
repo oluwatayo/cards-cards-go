@@ -67,6 +67,10 @@ type card struct {
 	color string
 }
 
-func (c card) printCard() {
+func (c *card) printCard() {
 	fmt.Printf("%+v", c)
+}
+
+func (c *card) updateCardName(newName string) {
+	(*c).name = newName
 }
