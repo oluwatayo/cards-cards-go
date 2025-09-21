@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+	"io"
+	"os"
+)
+
+func readFile() {
+	fileName := "file.txt"
+	content, err := os.Open(fileName)
+	if err != nil {
+		fmt.Println("error: ", err)
+		return
+	}
+
+	io.Copy(os.Stdout, content)
+}
